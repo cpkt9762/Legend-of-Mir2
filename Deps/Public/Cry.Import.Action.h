@@ -1,5 +1,7 @@
+#if !defined(_Action_)
+#define _Action_
 #pragma once
-#include <cstdint>
+#include <Port>
 namespace Cry
 {
 	namespace Action
@@ -23,3 +25,4 @@ namespace Cry
 		};
 	};
 };
+#endif

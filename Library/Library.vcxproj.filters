@@ -150,6 +150,9 @@
     <ClInclude Include="Game\Reflection\Cry.Game.Reflection.h">
       <Filter>源文件\Game\Reflection</Filter>
     </ClInclude>
+    <ClInclude Include="Import\Cry.Game.Tag.h">
+      <Filter>头文件\Action\Import</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entrance.cpp">

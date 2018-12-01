@@ -17,14 +17,7 @@ namespace Cry
 		}
 		void Reflection::VirtualTimerCallbackEx()
 		{
-			if (!SetEvent(m_InterfaceEx->m_lpEventHandles))
-			{
-				DebugMsg("ResetEvent Error:%d EventHandles:[%d]\n", GetLastError(), m_InterfaceEx->m_lpEventHandles);
-			}
-			else
-			{
-				DebugMsg("HOOK进行中 EventHandles:[%d]\n", m_InterfaceEx->m_lpEventHandles);
-			}
+			DebugMsg("跳转中\n");
 		}
 		void ConstDeclspec Reflection::VirtualTimerCallback()
 		{

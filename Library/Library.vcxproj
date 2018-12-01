@@ -184,6 +184,7 @@
     <ClInclude Include="Game\Initialize\Cry.Game.Initialize.h" />
     <ClInclude Include="Game\Reflection\Cry.Game.Reflection.h" />
     <ClInclude Include="Game\Utility\Cry.Game.Utility.h" />
+    <ClInclude Include="Import\Cry.Game.Tag.h" />
     <ClInclude Include="Import\Detour\Cry.DetourEngine.hpp" />
     <ClInclude Include="Import\Memory\Cry.Game.Compare.hpp" />
     <ClInclude Include="InterProcess\Cry.Signal.Client.h" />
