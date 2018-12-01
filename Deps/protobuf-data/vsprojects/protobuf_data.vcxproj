@@ -106,6 +106,8 @@
       <AdditionalIncludeDirectories>..\..\protobuf-3.6.1\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>
+      </LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -141,6 +143,8 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <ControlFlowGuard>Guard</ControlFlowGuard>
+      <LanguageStandard>
+      </LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

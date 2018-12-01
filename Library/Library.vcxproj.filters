@@ -85,6 +85,12 @@
     <Filter Include="头文件\Import\Detour">
       <UniqueIdentifier>{0fad3fc2-c811-4384-88d7-a2fe1335fefe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Game\Reflection">
+      <UniqueIdentifier>{72c47927-2691-43a6-9b89-f497d4cacb73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Game\Reflection">
+      <UniqueIdentifier>{d4a58622-2094-4529-b807-91f1fae99083}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entrance.h">
@@ -141,6 +147,9 @@
     <ClInclude Include="Import\Detour\Cry.DetourEngine.hpp">
       <Filter>头文件\Import\Detour</Filter>
     </ClInclude>
+    <ClInclude Include="Game\Reflection\Cry.Game.Reflection.h">
+      <Filter>源文件\Game\Reflection</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Entrance.cpp">
@@ -163,6 +172,9 @@
     </ClCompile>
     <ClCompile Include="..\Deps\InterProcess\ServiceInterface\Cry.Signal.Interface.cpp">
       <Filter>源文件\InterProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Reflection\Cry.Game.Reflection.cpp">
+      <Filter>源文件\Game\Reflection</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

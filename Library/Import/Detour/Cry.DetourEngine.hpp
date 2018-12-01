@@ -30,6 +30,8 @@ namespace Cry
 			lPointer pDetour;
 		};
 	public:
+		/// detourc
+		/// detourd
 		/// 参数1：强制左值[否]
 		/// 参数2：强制左值[是]
 		/// 参数3：变参备用
@@ -38,7 +40,7 @@ namespace Cry
 		{
 			if (bool bSucess = true)
 			{
-				if (bSucess &= this->Execution(ppPointer, pDetour); bSucess)
+				if (bSucess &= this->Execution(std::move((*&(lPointer&)ppPointer)), std::move(*&(lPointer&)(std::bind(std::forward<_Ty2>(pDetour), std::forward<_Types>(_Args)...)))); bSucess)
 				{
 					m_DataBase.emplace(std::make_pair(lpszDefined, tag{ std::move((*&(lPointer&)ppPointer)), std::move(*&(lPointer&)(std::bind(std::forward<_Ty2>(pDetour), std::forward<_Types>(_Args)...))) }));
 					return bSucess;

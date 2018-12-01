@@ -20,8 +20,8 @@ namespace Cry
 			Work(NetworkEngineService * Service, evpp::TCPConnPtr Conn, evpp::EventLoop * Loop);
 			virtual ~Work() = default;
 		public:
-			virtual bool Receive(evpp::Buffer * pData) /*override*/;
-			virtual bool Send(const uint32_t uMsg, const google::protobuf::Message & pData) /*override*/;
+			virtual bool Receive(evpp::Buffer * pData);
+			virtual bool Send(const uint32_t uMsg, const google::protobuf::Message & pData);
 		public:
 			virtual bool OnNotify(const uint32_t uMsg, const google::protobuf::Message * pData);
 		private:
@@ -39,10 +39,11 @@ namespace Cry
 		public:
 			Q_OBJECT
 		public:
-			NetworkEngineService(const std::string& lpszAddress, const std::string& lpszFlags, uint32_t uThreadSize);
+			NetworkEngineService(const std::string & lpszAddress, const std::string & lpszFlags, uint32_t uThreadSize);
 			~NetworkEngineService();
 		public:
 			friend class ServiceInterface;
+			friend class QWindows::FirstLication;
 		public:
 			std::shared_ptr<QWindows::FirstLication> & SetWindowsInterface(std::shared_ptr<QWindows::FirstLication> QWindows)
 			{

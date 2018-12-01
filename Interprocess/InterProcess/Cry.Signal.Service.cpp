@@ -96,7 +96,7 @@ namespace Cry
 		///***********************************************************************************///
 		///***********************************************************************************///
 		///***********************************************************************************///
-		NetworkEngineService::NetworkEngineService(const std::string& lpszAddress, const std::string& lpszFlags, uint32_t uThreadSize) : m_Server(m_EventLoop.loop(), lpszAddress, lpszFlags, uThreadSize)
+		NetworkEngineService::NetworkEngineService(const std::string & lpszAddress, const std::string & lpszFlags, uint32_t uThreadSize) : m_Server(m_EventLoop.loop(), lpszAddress, lpszFlags, uThreadSize)
 		{
 			m_Server.SetConnectionCallback(std::bind(&NetworkEngineService::OnConnection, this, std::placeholders::_1));
 			m_Server.SetMessageCallback(std::bind(&NetworkEngineService::OnMessage, this, std::placeholders::_1, std::placeholders::_2));

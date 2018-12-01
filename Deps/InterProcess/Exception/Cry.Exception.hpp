@@ -10,6 +10,7 @@ namespace Cry
 	class Exception
 	{
 	public:
+		Exception() = default;
 		Exception(const std::string & lpszString) : m_lpszString(lpszString)
 		{
 

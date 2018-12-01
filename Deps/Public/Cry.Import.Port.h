@@ -23,6 +23,7 @@ using u16       = unsigned short;
 using u32       = unsigned int;
 using u64       = unsigned long long;
 using ulong32   = unsigned long;
+using lPVoid    = void *;
 
 // These macros must exactly match those in the Windows SDK's intsafe.h.
 #define INT8_MIN         (-127i8 - 1)
@@ -110,8 +111,17 @@ using ulong32   = unsigned long;
 
 #if defined(TEXT)
     #define TYPETEXT(x) TEXT(#x)
-#else
+#endif
 
+#if defined(ConstStack)
+	#define ConstStack __stdcall
+#else
+	
+#endif
+#if !defined(ConstDeclspec)
+	#define	ConstDeclspec __declspec(naked)
+#else
+	#define	ConstDeclspec
 #endif
 
 #endif // RC_INVOKED
